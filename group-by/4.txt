@@ -1,0 +1,6 @@
+SELECT departments.name,COUNT(degrees.id) AS number_of_courses
+FROM departments
+JOIN degrees
+ON departments.id=degrees.department_id
+GROUP BY departments.id
+ORDER BY departments.name

@@ -1,0 +1,8 @@
+SELECT courses.name,exams.date,exams.hour,  AVG(exam_student.vote) AS average_result
+FROM exams
+JOIN exam_student
+ON exams.id=exam_student.exam_id
+JOIN courses
+ON courses.id=exams.course_id
+GROUP BY exams.id
+ORDER BY courses.name 	

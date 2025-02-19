@@ -1,0 +1,4 @@
+SELECT COUNT(year(students.enrolment_date)) AS enrollments, year(students.enrolment_date) AS en_year
+FROM students
+GROUP BY en_year
+ORDER BY en_year

@@ -1,0 +1,4 @@
+SELECT office_address,COUNT(teachers.office_address) AS number_of_professors
+FROM teachers
+GROUP BY teachers.office_address
+ORDER BY office_address
