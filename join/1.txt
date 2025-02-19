@@ -1,0 +1,4 @@
+SELECT *
+FROM students
+LEFT JOIN degrees ON students.degree_id=degrees.id
+WHERE degrees.name = 'Corso di Laurea in Economia'

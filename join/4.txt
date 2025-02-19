@@ -1,0 +1,7 @@
+SELECT *
+FROM students
+INNER JOIN degrees
+ON students.degree_id=degrees.id
+INNER JOIN departments
+ON degrees.department_id= departments.id
+ORDER BY surname, students.name 

@@ -1,0 +1,7 @@
+SELECT *
+FROM courses
+INNER JOIN course_teacher
+ON courseS.id= course_teacher.course_id
+INNER JOIN teachers
+ON course_teacher.teacher_id=teachers.id
+WHERE teachers.id=44
